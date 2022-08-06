@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<p>{{ pk }}番目のTodoを削除します。</p>
+	<form action='' method='POST'>{% csrf_token %}
+	<input type="submit" value='delete'>
+	</form>
+{% endblock content %}
